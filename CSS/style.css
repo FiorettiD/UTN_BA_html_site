@@ -1,0 +1,133 @@
+body{
+  background-color: rgba(237,121,54,255);
+}
+
+@font-face{
+  font-family: NightTV;
+  src: url(/Misc/sitefont.ttf)
+}
+
+header{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer{
+  position: fixed;
+  display: flex;
+  left: 66%;
+  bottom: 0;
+  width: 33%;
+}
+
+aside{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  font-size: 160%;
+  left: 66%;
+  bottom: 10%;
+  width: 33%;
+  height: 75%;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+#testBox{
+  border: 2px solid cyan;
+}
+
+#record{
+  width: 15%;
+  height: 15%;
+}
+
+#logo{
+  width: 5%;
+  height: 5%;
+}
+
+#player{
+  margin: auto;
+}
+
+.textDefault{
+  font-family: NightTV, Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: black;
+  font-size: 100%;
+}
+
+.navBar{
+  display: flex;
+  text-align: center;
+}
+
+.navLinks{
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks li{
+  list-style-type: none;
+}
+
+.navLinks li a{
+  text-decoration: none;
+  color: black;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-between;
+  gap: 3px;
+  margin-left: 3px;
+  margin-bottom: 3px;
+  width: 65%;
+}
+
+.displayImage{
+  height: 100%;
+  width: 100%;
+}
+
+@media(max-width: 600px){
+  header{
+    font-size: 50%;
+  }
+  footer{
+    font-size: 50%;
+    width: auto;
+    left: 0;
+  }
+  aside{
+    font-size: 100%;
+    align-items: center;
+    left: 0;
+    bottom: auto;
+    width: 99%;
+    height: 23%;
+  }
+  .navBar{
+    font-size: 120%;
+  }
+  .flex-container{
+    width: auto;
+  }
+}
+@media(max-width: 960px){
+  header{
+    font-size: 70%;
+  }
+  aside{
+    font-size: 120%;
+    justify-content: center;
+  }
+}
