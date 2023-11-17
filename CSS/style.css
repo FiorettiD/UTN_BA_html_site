@@ -1,5 +1,17 @@
 body{
-  background-color: rgba(237,121,54,255);
+  background: rgba(237,121,54,255);
+  color: black;
+  font-family: NightTV, Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 150%;
+}
+
+.darkbody{
+  background-color: rgba(8,18,36,255);
+  color: whitesmoke;
+  font-family: NightTV, Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 150%;
 }
 
 @font-face{
@@ -16,20 +28,23 @@ header{
 footer{
   position: fixed;
   display: flex;
-  left: 66%;
+  left: 74%;
   bottom: 0;
-  width: 33%;
+  width: 25%;
 }
 
 aside{
   position: fixed;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: end;
   align-content: space-between;
-  font-size: 160%;
-  left: 66%;
+  font-size: 120%;
+  gap: 3px;
+  left:  74%;
   bottom: 10%;
-  width: 33%;
+  width: 25%;
   height: 75%;
 }
 
@@ -37,8 +52,9 @@ li{
   margin-bottom: 10px;
 }
 
-#testBox{
-  border: 2px solid cyan;
+#themeToggle{
+  cursor: pointer;
+  padding: 10px 10px;
 }
 
 #record{
@@ -55,11 +71,34 @@ li{
   margin: auto;
 }
 
-.textDefault{
-  font-family: NightTV, Arial, Helvetica, sans-serif;
+#indexImage{
+  height: 90%;
+  width: 90%;
+}
+
+#artistImage{
+  height: 80%;
+  width: 80%;
+}
+
+#ostImage{
+  height: 40%;
+  width: 40%;
+}
+
+#linkImage{
+  height: 40%;
+  width: 40%;
+}
+
+div.container {
   text-align: center;
-  color: black;
-  font-size: 100%;
+}
+
+ul.customList {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
 }
 
 .navBar{
@@ -78,27 +117,38 @@ li{
 
 .navLinks li a{
   text-decoration: none;
-  color: black;
 }
 
 .flex-container {
   display: flex;
-  flex-direction: row; 
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   align-content: space-between;
-  gap: 3px;
-  margin-left: 3px;
-  margin-bottom: 3px;
-  width: 65%;
+  margin: 5px;
+  gap: 10px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  width: 73%;
 }
 
-.displayImage{
-  height: 100%;
-  width: 100%;
-}
-
-@media(max-width: 600px){
+@media(max-width: 480px){
+  h1{
+    font-size: 80%;
+    padding: 3px 3px;
+  }
+  body{
+    font-size: 90%;
+  }
+  .darkbody{
+    font-size: 90%;
+  }
+  #themeToggle{
+    font-size: 20%;
+  }
+  .navLinks{
+    gap: 10px;
+  }
   header{
     font-size: 50%;
   }
@@ -107,8 +157,27 @@ li{
     width: auto;
     left: 0;
   }
+  #indexImage{
+    height: 200%;
+    width: 200%;
+  }
+  
+  #artistImage{
+    height: 200%;
+    width: 200%;
+  }
+  
+  #ostImage{
+    height: 200%;
+    width: 200%;
+  }
+  
+  #linkImage{
+    height: 200%;
+    width: 200%;
+  }
   aside{
-    font-size: 100%;
+    font-size: 60%;
     align-items: center;
     left: 0;
     bottom: auto;
@@ -116,7 +185,31 @@ li{
     height: 23%;
   }
   .navBar{
-    font-size: 120%;
+    font-size: 100%;
+  }
+  .flex-container{
+    width: auto;
+  }
+}
+@media(max-width: 600px){
+  header{
+    font-size: 50%;
+  }
+  footer{
+    font-size: 90%;
+    width: auto;
+    left: 0;
+  }
+  aside{
+    font-size: 60%;
+    align-items: center;
+    left: 0;
+    bottom: auto;
+    width: 99%;
+    height: 23%;
+  }
+  .navBar{
+    font-size: 100%;
   }
   .flex-container{
     width: auto;
@@ -127,7 +220,7 @@ li{
     font-size: 70%;
   }
   aside{
-    font-size: 120%;
+    font-size: 80%;
     justify-content: center;
   }
 }

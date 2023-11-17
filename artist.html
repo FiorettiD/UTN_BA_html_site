@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" conten="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>La Musica de Samurai Champloo</title>
+    </head>
+    <body class="textDefault">
+        <header>
+            <img id="logo" src="Images/record.gif" alt="Logo placeholder">
+            <h1>La Musica de Samurai Champloo</h1>
+            <button id="themeToggle">Toggle dark mode</button>
+            <script src="Script/darkmode.js"></script>
+            <nav class="navBar">
+                <ui class="navLinks">
+                    <li><a href="index.html">Samurai Champloo</a></li>
+                    <li><a href="artist.html">Artistas</a></li>
+                    <li><a href="ost.html">Soundtrack</a></li>
+                    <li><a href="links.html">Links</a></li>
+                </ui>
+            </nav>
+        </header>
+        <main>
+            <div class="flex-container"> 
+                <h2>Principales artistas involucrados</h2>
+            </div>
+
+            <div class="flex-container">
+                <img src="Images/1nujabes.jpg" id="artistImage" alt="Nujabes">
+                <span>Jun "Nujabes" Seba fue un productor, ingeniero en sonido, DJ y compositor conocido como uno de los pioneros en el genero lo-fi hip hop por su uso de 
+                    elementos del hip hop y jazz para componer piezas atmoesfericas y nostalgicas. Entre sus otros trabajos se encuentra su composición Luv(sic) Hexalogy en la cual 
+                    colaboró con el artista Shing02.
+                </span>
+            </div>
+            <div class="flex-container">
+                <span>
+                    Shinji "Tsutchie" Tsuchida es miembro del grupo Shakkazombie junto a Takeshi "Big-O" Osumi y Hidehiro "Hide-Bowie" Iguchi, con Tsutchie siendo el DJ y compositor del 
+                grupo. Mientras el grupo es reconocido como uno de los mas influyentes del rap japones, Tsutchie es conocido por su trabajo produciendo para otros artistas al igual que 
+                series como Samurai Champloo y GANGSTA.
+                </span>
+                <img src="Images/2tsutchie.png" id="artistImage" alt="Tsutchie">
+            </div>
+            <div class="flex-container">
+                <img src="Images/3fatjon.jpg" id="artistImage" alt="Fat Jon">
+                <span>
+                    Jon Erin "Fat Jon" Marshall es un productor y rapero estadounidense que forma parte de los grupos Five Deez, 3582, Rebel Clique y Beautiful Killing Machine. Aunque su trabajo 
+                colaborativo se a relentizado, sigue sacando albunes individuales con el mas reciente siendo Plaything: Cipher en 2022.
+                </span>
+            </div>
+            <div class="flex-container">
+                <span>
+                    FORCE OF NATURE es un duo compuesto por Kitazawa "KZA" Ikuzumi y Kento "DJ Kent" Sasaki. Se volvieron conocidos en la escena de clubs y baile japonesa por sus composiciones 
+                    inspiradas en hip hop, disco, techno, house, dub y electronica. Entre los temas instrumentales que hicieron para Samurai Champloo se denota el rap Hiji Zuru STYLE en conjunto con "Suiken" y 
+                    "S-Word" del grupo Nitro Microphone Underground.
+                </span>
+                <img src="Images/4forceofnature.jpg" id="artistImage" alt="FORCE OF NATURE">
+            </div>
+        </main>
+        <aside>
+            <h2>   Canciones de prueba</h2>
+            <ul class="customList" id="list">
+                <li><a href="#" data-value="Audio/battlecry.ogg">Battlecry - Nujabes feat. Shing02</a></li>
+                <li><a href="#" data-value="Audio/aruarian dance.ogg">Aruarian Dance - Nujabes</a></li>
+                <li><a href="#" data-value="Audio/genome.ogg">Genome - Fat Jon</a></li>
+                <li><a href="#" data-value="Audio/mist.ogg">Mist - FORCE OF NATURE</a></li>
+                <li><a href="#" data-value="Audio/process.ogg">Process - tsutchie</a></li>
+                <li><a href="#" data-value="Audio/shiki no uta.ogg">Shiki no Uta - MINMI</a></li>
+            </ul>
+        </aside>
+        <footer>
+            <script src="Script/music.js"></script>
+            <!--Todo lo que es musica-->
+                <img id="record" src="Images/record.gif">
+                <audio id="player" controls="controls">
+                    <source id="audioSource" src=""></source>
+                </audio>
+                <img id="record" src="Images/record.gif">
+        </footer>
+    </body>
+</html>
